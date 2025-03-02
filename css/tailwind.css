@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+.hero {
+   height: 500px;
+}
+
+.slider {
+   height: 580px;
+}
+
+.homeslide {
+
+}
+
+.card {
+   width: 300px;
+}
+
+@screen xl {
+
+    
+}
+
+.header {
+
+}
+@tailwind utilities;
