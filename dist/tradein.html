@@ -463,40 +463,5 @@
   <footer class="bg-gray-900 text-primary h-20 p-6 font-sans">
      <p>Апдейт зон ХХК © 2019-2024 Бүх эрх хуулиар хамгаалагдсан.</p>
   </footer>
-        
-
-
-   <!-- Script start -->
-
-   <!-- Slider controls -->
-   <script>
-      var button_next = document.getElementById("next-btn");
-      button_next.onclick = function () {
-        var container = document.getElementById("container");
-        sideScroll(container, "right", 25, 300, 50);
-      };
-
-      var button_prev = document.getElementById("prev-btn");
-      button_prev.onclick = function () {
-        var container = document.getElementById("container");
-        sideScroll(container, "left", 25, 300, 50);
-      };
-
-      function sideScroll(element, direction, speed, distance, step) {
-        scrollAmount = 0;
-        var slideTimer = setInterval(function () {
-          if (direction == "left") {
-            element.scrollLeft -= step;
-          } else {
-            element.scrollLeft += step;
-          }
-          scrollAmount += step;
-          if (scrollAmount >= distance) {
-            window.clearInterval(slideTimer);
-          }
-        }, speed);
-      }
-    </script>
-    <!-- Script end -->
 </body>
 </html>
